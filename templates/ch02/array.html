@@ -1,0 +1,23 @@
+{{define "ch02/array.html"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>数组</title>
+    </head>
+    <body>
+
+    {{/* 第一种循环方式 */}}
+    {{range .}}
+        {{.}}
+    {{end}}
+    <br>
+    {{/*    第二种循环方式*/}}
+    {{range $k,$v := .}}
+        {{$k}}
+        {{$v}}
+        <br>
+    {{end}}
+    </body>
+    </html>
+{{end}}

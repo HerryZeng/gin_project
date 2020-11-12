@@ -1,0 +1,15 @@
+{{define "ch02/array_struct.html"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+    {{range .}}
+        {{.Id}}|{{.Name}}|{{.Age}}|{{.Address}}
+        <br>
+    {{end}}
+    </body>
+    </html>
+{{end}}
