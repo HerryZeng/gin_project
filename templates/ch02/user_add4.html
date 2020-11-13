@@ -1,0 +1,26 @@
+{{define "ch02/user_add4.html"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>添加用户</title>
+    </head>
+    <body>
+    <p>这里通过绑定添加用户页面</p>
+    <form action="/do_user_add4" method="post">
+        用户名:
+        <input type="text" name="name">
+        <br>
+        年&nbsp;&nbsp;&nbsp;&nbsp;龄:
+        <input type="text" name="age">
+        <br>
+        地&nbsp;&nbsp;&nbsp;&nbsp;址:
+        <input type="text" name="address">
+        <br>
+        <input type="submit" name="提交">
+    </form>
+
+
+    </body>
+    </html>
+{{end}}

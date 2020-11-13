@@ -1,0 +1,31 @@
+{{define "ch02/map_struct.html"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Map_Struct</title>
+    </head>
+    <body>
+    <p>这是Map+Struct</p>
+    <table border="1">
+        <thead>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>地址</th>
+        </thead>
+        <tbody>
+        {{range .}}
+            <tr>
+                <td>{{.Id}}</td>
+                <td>{{.Name}}</td>
+                <td>{{.Age}}</td>
+                <td>{{.Address}}</td>
+            </tr>
+        {{end}}
+        </tbody>
+    </table>
+
+    </body>
+    </html>
+{{end}}
