@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c99e2f8c-71c6-40df-a18f-cd93427224b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ch02/map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ch02/map_struct.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ch02/slice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ch02/user_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ch02/user_add3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ch02/user_add4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch02/test_upload.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ch02/test_upload1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ch02/test_upload2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/1605362568Django.xmind" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02/ch02.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/ch02.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,12 +67,12 @@
     <property name="settings.editor.selected.configurable" value="go" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/ch02" />
       <recent name="$PROJECT_DIR$/static/js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,6 +89,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
