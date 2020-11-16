@@ -53,3 +53,29 @@ func DoUpload2(ctx *gin.Context) {
 	}
 	ctx.String(http.StatusOK, "多文件上传成功!")
 }
+
+func ToUploadFile4(ctx *gin.Context) {
+	ctx.HTML(http.StatusOK, "ch02/test_upload4.html", nil)
+}
+
+func DoUploadFile4(ctx *gin.Context) {
+	form, err := ctx.MultipartForm()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	files := form.File["file"]
+	for _, file := range files {
+		fmt.Println(file.Filename)
+		timeUnixStr := strconv.FormatInt(time.Now().Unix(), 10)
+		err = ctx.SaveUploadedFile(file, "upload/"+timeUnixStr+file.Filename)
+		if err != nil {
+			ctx.String(http.StatusOK, "文件保存失败", err)
+			return
+		}
+	}
+	ctx.JSON(http.StatusOK, gin.H{
+		"code": 200,
+		"msg":  "AJAX多文件上传成功",
+	})
+}

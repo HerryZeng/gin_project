@@ -40,5 +40,8 @@ func main() {
 	r.GET("/test_to_upload2", ch02.ToUpload2)
 	r.POST("/test_do_upload2", ch02.DoUpload2)
 
+	r.GET("/test_to_upload4", ch02.ToUploadFile4)
+	r.POST("/test_do_upload4", ch02.DoUploadFile4)
+
 	_ = r.Run(":8080")
 }

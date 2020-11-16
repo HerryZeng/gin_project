@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c99e2f8c-71c6-40df-a18f-cd93427224b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch02/test_upload.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ch02/test_upload1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ch02/test_upload2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/1605362568Django.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ch02/test_upload4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/1605517886Colorful-Abstraction01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/1605517886abc-123.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch02/test_upload.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch02/test_upload.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,13 +67,39 @@
     <property name="settings.editor.selected.configurable" value="go" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/ch02" />
       <recent name="$PROJECT_DIR$/static/js" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build test_upload.go">
+    <configuration name="go build gin_project" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gin_project" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="gin_project" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test_upload.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gin_project" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/ch02/test_upload.go" />
+      <package value="gin_project" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build gin_project" />
+        <item itemvalue="Go Build.go build test_upload.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +121,38 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state width="1872" height="312" key="GridCell.Tab.0.bottom" timestamp="1605518617821">
+      <screen x="0" y="0" width="1918" height="985" />
+    </state>
+    <state width="1872" height="312" key="GridCell.Tab.0.bottom/0.0.1918.985@0.0.1918.985" timestamp="1605518617821" />
+    <state width="1872" height="312" key="GridCell.Tab.0.center" timestamp="1605518617820">
+      <screen x="0" y="0" width="1918" height="985" />
+    </state>
+    <state width="1872" height="312" key="GridCell.Tab.0.center/0.0.1918.985@0.0.1918.985" timestamp="1605518617820" />
+    <state width="1872" height="312" key="GridCell.Tab.0.left" timestamp="1605518617818">
+      <screen x="0" y="0" width="1918" height="985" />
+    </state>
+    <state width="1872" height="312" key="GridCell.Tab.0.left/0.0.1918.985@0.0.1918.985" timestamp="1605518617818" />
+    <state width="1872" height="312" key="GridCell.Tab.0.right" timestamp="1605518617821">
+      <screen x="0" y="0" width="1918" height="985" />
+    </state>
+    <state width="1872" height="312" key="GridCell.Tab.0.right/0.0.1918.985@0.0.1918.985" timestamp="1605518617821" />
+    <state width="1872" height="312" key="GridCell.Tab.1.bottom" timestamp="1605518617825">
+      <screen x="0" y="0" width="1918" height="985" />
+    </state>
+    <state width="1872" height="312" key="GridCell.Tab.1.bottom/0.0.1918.985@0.0.1918.985" timestamp="1605518617825" />
+    <state width="1872" height="312" key="GridCell.Tab.1.center" timestamp="1605518617825">
+      <screen x="0" y="0" width="1918" height="985" />
+    </state>
+    <state width="1872" height="312" key="GridCell.Tab.1.center/0.0.1918.985@0.0.1918.985" timestamp="1605518617825" />
+    <state width="1872" height="312" key="GridCell.Tab.1.left" timestamp="1605518617824">
+      <screen x="0" y="0" width="1918" height="985" />
+    </state>
+    <state width="1872" height="312" key="GridCell.Tab.1.left/0.0.1918.985@0.0.1918.985" timestamp="1605518617824" />
+    <state width="1872" height="312" key="GridCell.Tab.1.right" timestamp="1605518617825">
+      <screen x="0" y="0" width="1918" height="985" />
+    </state>
+    <state width="1872" height="312" key="GridCell.Tab.1.right/0.0.1918.985@0.0.1918.985" timestamp="1605518617825" />
     <state x="214" y="0" key="SettingsEditor" timestamp="1605188578911">
       <screen x="0" y="0" width="1366" height="708" />
     </state>
