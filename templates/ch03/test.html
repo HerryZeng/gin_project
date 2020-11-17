@@ -17,6 +17,20 @@
         {{$i}} {{$v}}
         <br>
     {{end}}
+
+    {{.article.Id}}
+    {{.article.Title}}
+    {{.article.Desc}}
+    <br>
+    {{with .article1}}
+        {{.Id}}
+        {{.Title}}
+        {{.Desc}}
+    {{else}}
+        没有数据
+    {{end}}
+    <br>
+    {{template "ch03/base.html" .}}
     </body>
     </html>
 {{end}}
