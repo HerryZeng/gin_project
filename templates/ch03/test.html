@@ -1,0 +1,22 @@
+{{define "ch03/test.html"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+    <p>模块语法</p>
+    {{.name}}
+    {{range .arr}}
+        {{.}}
+    {{end}}
+
+    <br>
+    {{range $i,$v := .arr}}
+        {{$i}} {{$v}}
+        <br>
+    {{end}}
+    </body>
+    </html>
+{{end}}

@@ -3,7 +3,11 @@ package main
 import (
 	"gin_project/ch01"
 	"gin_project/ch02"
+	"gin_project/ch03"
 	"github.com/gin-gonic/gin"
+	"log"
+	"net/http"
+	"time"
 )
 
 func main() {
@@ -43,5 +47,26 @@ func main() {
 	r.GET("/test_to_upload4", ch02.ToUploadFile4)
 	r.POST("/test_do_upload4", ch02.DoUploadFile4)
 
-	_ = r.Run(":8080")
+	r.GET("/output_json", ch02.OutJson)
+	r.GET("/output_ascii_json", ch02.OutAsciiJson)
+	r.GET("/output_jsonp", ch02.OutJsonp)
+	r.GET("/output_pure_json", ch02.OutPureJson)
+	r.GET("/output_secure_json", ch02.OutSecureJson)
+	r.GET("/output_xml", ch02.OutXml)
+	r.GET("/output_yaml", ch02.OutYaml)
+	r.GET("/output_proto", ch02.OutProto)
+
+	r.GET("/redirect_a", ch02.RedirectA)
+	r.GET("/redirect_b", ch02.RedirectB)
+
+	r.GET("/test_tpl", ch03.TestSyntaxTpl)
+
+	//_ = r.Run(":8080")
+	s := &http.Server{
+		Addr:         ":8080",
+		Handler:      r,
+		ReadTimeout:  10 * time.Second,
+		WriteTimeout: 5 * time.Second,
+	}
+	log.Fatal(s.ListenAndServe())
 }
