@@ -6,6 +6,8 @@ import (
 	"gin_project/ch03"
 	"gin_project/ch04"
 	"github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin/binding"
+	"github.com/go-playground/validator/v10"
 	"html/template"
 	"log"
 	"net/http"
@@ -21,6 +23,10 @@ func main() {
 		"htmlSafe": ch03.HtmlSafe,
 	})
 
+	v, ok := binding.Validator.Engine().(*validator.Validate)
+	if ok {
+		_ = v.RegisterValidation("len_valid", ch04.LenValid)
+	}
 	r.LoadHTMLGlob("templates/**/*")
 	r.Static("/static", "static")
 
@@ -79,6 +85,9 @@ func main() {
 	r.POST("/do_bind_json", ch04.DoBindJson)
 
 	r.GET("/bind_uri/:name/:age/:address", ch04.BindUri)
+
+	r.GET("/to_valid_data", ch04.ToValidData)
+	r.POST("/do_valid_data", ch04.DoValidData)
 
 	//_ = r.Run(":8080")
 	s := &http.Server{
