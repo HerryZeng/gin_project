@@ -1,0 +1,28 @@
+{{define "ch03/test_func_tpl.html"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+    <p>这是模板函数页面</p>
+
+    {{index .slicedata 1}}
+    <br>
+    {{index .slicedata 0}}
+
+    <br>
+    {{urlquery "https://www.baidu.com"}}
+
+    <br>
+    {{.now_time.Format "2006/01/02 15:04:05"}}
+    <br>
+    {{add 1 2}}
+    <br>
+    {{ subStr "abcd1234567" 7}}
+    <br>
+    {{htmlSafe "<a href='https://www.baidu.com'>百度</a>"}}
+    </body>
+    </html>
+{{end}}

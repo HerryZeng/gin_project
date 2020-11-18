@@ -1,0 +1,46 @@
+{{define "ch04/bind_json.html"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BIND JSON</title>
+        <script src="/static/js/jquery.min.js"></script>
+    </head>
+    <body>
+    <p>bind json页面</p>
+    <form>
+        姓名:<input type="text" id="name" placeholder="请输入姓名"><br>
+        年龄:<input type="text" id="age" placeholder="请输入年龄"><br>
+        地址:<input type="text" id="address" placeholder="请输入地址"><br>
+        <input type="button" value="提交" id="btn_add">
+    </form>
+    <script>
+        let btn_add = document.getElementById("btn_add");
+        btn_add.onclick = function () {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let address = document.getElementById("address").value;
+
+            $.ajax({
+                url: "/do_bind_json",
+                type: "POST",
+                data: JSON.stringify({
+                    "name": name,
+                    "age": Number(age),
+                    "address": address,
+                }),
+                contentType: "application/json",
+                dataType: "json",
+                success: function (data) {
+                    alert(data["code"]);
+                    alert(data["msg"])
+                },
+                fail: function (data) {
+                    alert("服务器发生错误!")
+                }
+            })
+        }
+    </script>
+    </body>
+    </html>
+{{end}}

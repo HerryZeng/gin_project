@@ -4,7 +4,9 @@ import (
 	"gin_project/ch01"
 	"gin_project/ch02"
 	"gin_project/ch03"
+	"gin_project/ch04"
 	"github.com/gin-gonic/gin"
+	"html/template"
 	"log"
 	"net/http"
 	"time"
@@ -12,6 +14,12 @@ import (
 
 func main() {
 	r := gin.Default()
+
+	r.SetFuncMap(template.FuncMap{
+		"add":      ch03.AddNum,
+		"subStr":   ch03.SubStr,
+		"htmlSafe": ch03.HtmlSafe,
+	})
 
 	r.LoadHTMLGlob("templates/**/*")
 	r.Static("/static", "static")
@@ -59,11 +67,22 @@ func main() {
 	r.GET("/redirect_a", ch02.RedirectA)
 	r.GET("/redirect_b", ch02.RedirectB)
 
+	// 模板语法
 	r.GET("/test_tpl", ch03.TestSyntaxTpl)
+	r.GET("/test_func_tpl", ch03.FuncTpl)
+
+	// 数据绑定
+	r.GET("/to_bind_form", ch04.ToBindForm)
+	r.POST("/do_bind_form", ch04.DoBindForm)
+	r.GET("/bind_query_string", ch04.BindQueryString)
+	r.GET("/to_bind_json", ch04.ToBindJson)
+	r.POST("/do_bind_json", ch04.DoBindJson)
+
+	r.GET("/bind_uri/:name/:age/:address", ch04.BindUri)
 
 	//_ = r.Run(":8080")
 	s := &http.Server{
-		Addr:         ":8080",
+		Addr:         ":9000",
 		Handler:      r,
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 5 * time.Second,
