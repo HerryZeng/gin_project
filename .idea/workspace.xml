@@ -19,7 +19,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c99e2f8c-71c6-40df-a18f-cd93427224b6" name="Default Changelist" comment="2020111802" />
+    <list default="true" id="769fe796-9b59-4f0c-90d3-2705d24f034a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ch01/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ch02/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ch03/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ch04/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ch05/basic_auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ch05/middle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ch05/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/rotuer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch01/ch01.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch01/ch01.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch02/ch02.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch02/ch02.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch02/output_other.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch02/output_other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch02/test_upload.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch02/test_upload.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03/test_func_tpl.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch03/test_func_tpl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch03/test_syntax_tpl.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch03/test_syntax_tpl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/bind_form.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch04/bind_form.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/bind_json.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch04/bind_json.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/bind_query_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch04/bind_query_string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/bind_uri.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch04/bind_uri.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/valid_data.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ch04/valid_data.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ch02/test_upload1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ch02/test_upload1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ch02/test_upload2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ch02/test_upload2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ch02/user_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ch02/user_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ch02/user_add3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ch02/user_add3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ch02/user_add4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ch02/user_add4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ch04/bind_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ch04/bind_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ch04/valid_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ch04/valid_data.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,10 +60,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="Go Application" />
         <option value="Go File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -39,62 +68,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1kByGGZcT1o5NABR4fTknOVFI1F" />
+  <component name="GoDepProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="ProjectId" id="1kUTY0rFSMk6dT80IbBVn9lhidZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/controller" />
+      <recent name="$PROJECT_DIR$/router" />
+      <recent name="$PROJECT_DIR$/ch04" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/proto" />
-      <recent name="$PROJECT_DIR$/templates/ch02" />
-      <recent name="$PROJECT_DIR$/static/js" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Go Build.go build gin_project">
-    <configuration name="go build gin_project" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gin_project" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="gin_project" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build test_upload.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gin_project" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/ch02/test_upload.go" />
-      <package value="gin_project" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Build.go build gin_project" />
-        <item itemvalue="Go Build.go build test_upload.go" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,81 +110,26 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="2020111802" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020111802" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="540" y="21" key="#GOPATH" timestamp="1605620326203">
-      <screen x="0" y="0" width="1366" height="708" />
-    </state>
-    <state x="540" y="21" key="#GOPATH/0.0.1366.708@0.0.1366.708" timestamp="1605620326203" />
-    <state x="758" y="146" key="#GOPATH/0.0.1918.981@0.0.1918.981" timestamp="1605585486483" />
-    <state x="649" y="345" key="#Updates" timestamp="1605585923279">
+    <state x="754" y="327" width="410" height="339" key="#Go_Modules" timestamp="1605754228057">
       <screen x="0" y="0" width="1918" height="981" />
     </state>
-    <state x="649" y="345" key="#Updates/0.0.1918.981@0.0.1918.981" timestamp="1605585923279" />
-    <state x="586" y="285" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605600876808">
+    <state x="754" y="327" width="410" height="339" key="#Go_Modules/0.0.1918.981@0.0.1918.981" timestamp="1605754228057" />
+    <state x="745" y="248" width="426" height="496" key="FileChooserDialogImpl" timestamp="1605754443934">
       <screen x="0" y="0" width="1918" height="981" />
     </state>
-    <state x="586" y="285" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1918.981@0.0.1918.981" timestamp="1605600876808" />
-    <state x="742" y="248" width="426" height="496" key="FileChooserDialogImpl" timestamp="1605662383265">
+    <state x="745" y="248" width="426" height="496" key="FileChooserDialogImpl/0.0.1918.981@0.0.1918.981" timestamp="1605754443934" />
+    <state x="489" y="119" width="947" height="742" key="SettingsEditor" timestamp="1605754491868">
       <screen x="0" y="0" width="1918" height="981" />
     </state>
-    <state x="742" y="248" width="426" height="496" key="FileChooserDialogImpl/0.0.1918.981@0.0.1918.981" timestamp="1605662383265" />
-    <state width="1872" height="251" key="GridCell.Tab.0.bottom" timestamp="1605596073094">
+    <state x="489" y="119" width="947" height="742" key="SettingsEditor/0.0.1918.981@0.0.1918.981" timestamp="1605754491868" />
+    <state x="643" y="88" width="631" height="804" key="find.popup" timestamp="1605765868472">
       <screen x="0" y="0" width="1918" height="981" />
     </state>
-    <state width="1872" height="251" key="GridCell.Tab.0.bottom/0.0.1918.981@0.0.1918.981" timestamp="1605596073094" />
-    <state width="1872" height="312" key="GridCell.Tab.0.bottom/0.0.1918.985@0.0.1918.985" timestamp="1605518617821" />
-    <state width="1872" height="251" key="GridCell.Tab.0.center" timestamp="1605596073090">
-      <screen x="0" y="0" width="1918" height="981" />
-    </state>
-    <state width="1872" height="251" key="GridCell.Tab.0.center/0.0.1918.981@0.0.1918.981" timestamp="1605596073090" />
-    <state width="1872" height="312" key="GridCell.Tab.0.center/0.0.1918.985@0.0.1918.985" timestamp="1605518617820" />
-    <state width="1872" height="251" key="GridCell.Tab.0.left" timestamp="1605596073087">
-      <screen x="0" y="0" width="1918" height="981" />
-    </state>
-    <state width="1872" height="251" key="GridCell.Tab.0.left/0.0.1918.981@0.0.1918.981" timestamp="1605596073087" />
-    <state width="1872" height="312" key="GridCell.Tab.0.left/0.0.1918.985@0.0.1918.985" timestamp="1605518617818" />
-    <state width="1872" height="251" key="GridCell.Tab.0.right" timestamp="1605596073092">
-      <screen x="0" y="0" width="1918" height="981" />
-    </state>
-    <state width="1872" height="251" key="GridCell.Tab.0.right/0.0.1918.981@0.0.1918.981" timestamp="1605596073092" />
-    <state width="1872" height="312" key="GridCell.Tab.0.right/0.0.1918.985@0.0.1918.985" timestamp="1605518617821" />
-    <state width="1872" height="312" key="GridCell.Tab.1.bottom" timestamp="1605518617825">
-      <screen x="0" y="0" width="1918" height="985" />
-    </state>
-    <state width="1872" height="312" key="GridCell.Tab.1.bottom/0.0.1918.985@0.0.1918.985" timestamp="1605518617825" />
-    <state width="1872" height="312" key="GridCell.Tab.1.center" timestamp="1605518617825">
-      <screen x="0" y="0" width="1918" height="985" />
-    </state>
-    <state width="1872" height="312" key="GridCell.Tab.1.center/0.0.1918.985@0.0.1918.985" timestamp="1605518617825" />
-    <state width="1872" height="312" key="GridCell.Tab.1.left" timestamp="1605518617824">
-      <screen x="0" y="0" width="1918" height="985" />
-    </state>
-    <state width="1872" height="312" key="GridCell.Tab.1.left/0.0.1918.985@0.0.1918.985" timestamp="1605518617824" />
-    <state width="1872" height="312" key="GridCell.Tab.1.right" timestamp="1605518617825">
-      <screen x="0" y="0" width="1918" height="985" />
-    </state>
-    <state width="1872" height="312" key="GridCell.Tab.1.right/0.0.1918.985@0.0.1918.985" timestamp="1605518617825" />
-    <state x="214" y="0" key="SettingsEditor" timestamp="1605621759541">
-      <screen x="0" y="0" width="1366" height="708" />
-    </state>
-    <state x="214" y="0" key="SettingsEditor/0.0.1366.708@0.0.1366.708" timestamp="1605621759541" />
-    <state x="300" y="0" key="SettingsEditor/0.0.1918.981@0.0.1918.981" timestamp="1605596070648" />
-    <state x="707" y="383" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605662409099">
-      <screen x="0" y="0" width="1918" height="981" />
-    </state>
-    <state x="707" y="383" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1918.981@0.0.1918.981" timestamp="1605662409099" />
-    <state x="670" y="383" key="git4idea.ui.GitStashDialog" timestamp="1605662396943">
-      <screen x="0" y="0" width="1918" height="981" />
-    </state>
-    <state x="670" y="383" key="git4idea.ui.GitStashDialog/0.0.1918.981@0.0.1918.981" timestamp="1605662396943" />
+    <state x="643" y="88" width="631" height="804" key="find.popup/0.0.1918.981@0.0.1918.981" timestamp="1605765868472" />
   </component>
 </project>

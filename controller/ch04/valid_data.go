@@ -40,14 +40,29 @@ func ToValidData(ctx *gin.Context) {
 
 func DoValidData(ctx *gin.Context) {
 	var article Article
+	var MessageTmpls = map[string]string{
+		"Required": "不能为空",
+		"Min":      "最小值: %d",
+		"Max":      "最大值 %d",
+		"Range":    "取值范围从 %d 到 %d",
+	}
+
+
+	validation.SetDefaultMessage(MessageTmpls)
 	err := ctx.ShouldBind(&article)
 	fmt.Println(article)
 	valid := validation.Validation{}
 	b, _ := valid.Valid(&article)
+
 	if !b {
 		for _, err2 := range valid.Errors {
-			fmt.Println(err2.Key)
-			fmt.Println(err2.Message)
+			//fmt.Println(err2.Key)
+			//fmt.Println(err2.Message)
+			//fmt.Println(err2)
+			if err2 != nil {
+				ctx.String(http.StatusOK, err2.Message)
+				return
+			}
 		}
 	}
 	if err != nil {
