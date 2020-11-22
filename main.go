@@ -4,6 +4,8 @@ import (
 	"gin_project/controller/ch03"
 	"gin_project/controller/ch04"
 	"gin_project/controller/ch05"
+	_ "gin_project/datasource"
+	_ "gin_project/logsource"
 	"gin_project/router"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
@@ -16,6 +18,12 @@ import (
 
 func main() {
 	r := gin.Default()
+	// 创建日志文件
+	//file, err := os.Create("logs/gin_project.log")
+	//if err != nil {
+	//	panic(err)
+	//}
+	//gin.DefaultWriter = io.MultiWriter(file, os.Stdout)
 	//r := gin.New()
 	//r.Use(gin.Logger(), gin.Recovery())
 	//r.Use(ch05.MiddleWare01, ch05.MiddleWare03())
