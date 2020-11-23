@@ -9,6 +9,8 @@ import (
 	"gin_project/controller/ch06"
 	"gin_project/controller/ch07"
 	"gin_project/controller/ch09"
+	"gin_project/controller/ch11"
+	"gin_project/middleware"
 	"github.com/gin-gonic/gin"
 )
 
@@ -21,6 +23,8 @@ func Router(r *gin.Engine) {
 	ch06Rg := r.Group("/ch06")
 	ch07Rg := r.Group("/ch07")
 	ch09Rg := r.Group("/ch09")
+	ch11Rg := r.Group("/ch11")
+	ch11Rg.Use(middleware.CROSMiddleWare)
 
 	ch01.Router(ch01Rg)
 	ch02.Router(ch02Rg)
@@ -30,4 +34,5 @@ func Router(r *gin.Engine) {
 	ch06.Router(ch06Rg)
 	ch07.Router(ch07Rg)
 	ch09.Router(ch09Rg)
+	ch11.Router(ch11Rg)
 }
