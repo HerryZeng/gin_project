@@ -1,12 +1,15 @@
 package main
 
 import (
+	"fmt"
 	"gin_project/controller/ch03"
 	"gin_project/controller/ch04"
 	"gin_project/controller/ch05"
 	_ "gin_project/datasource"
 	_ "gin_project/logsource"
 	"gin_project/router"
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-contrib/sessions/redis"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
@@ -27,6 +30,16 @@ func main() {
 	//r := gin.New()
 	//r.Use(gin.Logger(), gin.Recovery())
 	//r.Use(ch05.MiddleWare01, ch05.MiddleWare03())
+
+	// 通过cookie来使用session
+	//store := cookie.NewStore([]byte("dlzeng"))
+	//r.Use(sessions.Sessions("gin_session", store))
+
+	// 通过redis来使用session
+	store, rediserr := redis.NewStore(10, "tcp", "127.0.0.1:6379", "", []byte("dlzeng"))
+	fmt.Println(rediserr)
+	r.Use(sessions.Sessions("gin_session", store))
+
 	r.Use(ch05.MiddleWare01)
 
 	r.SetFuncMap(template.FuncMap{
