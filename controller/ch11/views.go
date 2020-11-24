@@ -69,7 +69,36 @@ func GetPostData(ctx *gin.Context) {
 	password := ctx.PostForm("password")
 	fmt.Println(name, password)
 	ctx.JSON(http.StatusOK, gin.H{
-		"code":http.StatusOK,
-		"msg":"成功",
+		"code": http.StatusOK,
+		"msg":  "成功",
+	})
+}
+
+func GetFile(ctx *gin.Context) {
+	name := ctx.PostForm("name")
+	password := ctx.PostForm("password")
+	fmt.Println(name, password)
+	file, _ := ctx.FormFile("upload_file")
+	filePath := "upload/" + file.Filename
+	_ = ctx.SaveUploadedFile(file, filePath)
+	ctx.JSON(http.StatusOK, gin.H{
+		"code": http.StatusOK,
+		"msg":  "成功",
+	})
+}
+
+func GetFiles(ctx *gin.Context) {
+	name := ctx.PostForm("name")
+	password := ctx.PostForm("password")
+	fmt.Println(name, password)
+	form,_ := ctx.MultipartForm()
+	files := form.File["upload_files"]
+	for _,file := range files {
+		filePath := "upload/" + file.Filename
+		_ = ctx.SaveUploadedFile(file, filePath)
+	}
+	ctx.JSON(http.StatusOK, gin.H{
+		"code": http.StatusOK,
+		"msg":  "成功",
 	})
 }

@@ -10,4 +10,6 @@ func Router(rg *gin.RouterGroup) {
 	rg.GET("/get_books", GetBooks)
 	rg.GET("/book_detail", GetBookDetail)
 	rg.POST("/post_test", GetPostData)
+	rg.POST("/upload_file", GetFile)
+	rg.POST("/upload_files", GetFiles)
 }
